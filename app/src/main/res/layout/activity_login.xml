@@ -12,6 +12,7 @@
 
     <EditText
         android:id="@+id/username"
+        android:hint="masuknya : admin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -25,6 +26,7 @@
 
     <EditText
         android:id="@+id/password"
+        android:hint="passwordnya : 123"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -45,7 +47,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
-
+        android:text="masuk gan"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.second.Weapon_Activity">
+    android:orientation="vertical"
+    tools:context="com.android.second.Weapon_Activity"
+    android:background="#00BCD4">
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -16,29 +19,34 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical"/>
-
+            android:orientation="vertical" >
             <ImageView
+                android:id="@+id/thumbnail"
                 android:layout_width="125dp"
                 android:layout_height="170dp"
                 android:background="#000000"
-                android:id="@+id/thumbnail"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerInside" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Weapon title"
-            android:layout_marginTop="10dp"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
-        
-        <TextView
-            android:textSize="18sp"
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="deskripsi"
-            />
+            <TextView
+                android:id="@+id/txtnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Weapon title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#F10909"/>
+
+            <TextView
+                android:id="@+id/txtdeskripsi"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deskripsi" />
+
+        </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
